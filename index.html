@@ -17,11 +17,137 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="l-header" id="header"></header>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Yahya</a>
 
-    <main class="l-header" id="header"></main>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
 
-    <!-- Main JS -->
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!-- Home -->
+          <section class="home" id="home">
+            
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/DSC_0471 (1).jpg" alt="" class="home__img">
+
+                <h1 class="home__title">YAHYA <b>BENJDY</b></h1>
+                <h3 class="home__profession">Junior Front End Developer</h3>
+
+                <!-- Button to download your CV saved in the pdf folder. available for mobile -->
+                <div>
+                  <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+              </div>
+            </div>
+
+            <div class="home__adress bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i> Rabat, Morocco.
+              </span>
+              <span class="home__information">
+                <i class="bx bx-envelope home__icon"></i> yahyabenjdy044@gmail.com
+              </span>
+              <span class="home__information">
+                <i class="bx bx-phone home__icon"></i> +212 6 42 63 06 29
+              </span>
+            </div>
+
+            
+          </section>
+          <!-- Theme change button -->
+          <!-- Button to generate and download the pdf. Available for desktop. -->
+
+          <!-- Social -->
+          <section class="social section"></section>
+
+          <!-- Profile -->
+          <section class="profile section" id="profile"></section>
+
+          <!-- Education -->
+          <section class="education section" id="education"></section>
+
+          <!-- Skills -->
+          <section class="skills section" id="skills"></section>
+        </div>
+
+        <div class="resume__right">
+          <!-- Experience -->
+          <section class="experience section" id="experience"></section>
+
+          <!-- Certificates -->
+          <section class="certificate section" id="certificates"></section>
+
+          <!-- References -->
+          <section class="references section" id="references"></section>
+
+          <!-- Languages -->
+          <section class="languages section"></section>
+
+          <!-- Interests -->
+          <section class="interests section"></section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scroll Top -->
+
+    <!-- HTML to PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- Main js-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
